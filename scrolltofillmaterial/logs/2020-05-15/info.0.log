@@ -1,0 +1,12 @@
+[INFO ] 2020-05-15 16:11:16.902 [main] c.j.s.ScrolltofillmaterialApplicationTests - Starting ScrolltofillmaterialApplicationTests on DESKTOP-8MIN001 with PID 9680 (started by FirstJava in D:\Users\idea\scrolltofillmaterial)
+[INFO ] 2020-05-15 16:11:16.956 [main] c.j.s.ScrolltofillmaterialApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 16:11:21.910 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-15 16:11:24.050 [main] c.j.s.ScrolltofillmaterialApplicationTests - Started ScrolltofillmaterialApplicationTests in 9.114 seconds (JVM running for 12.619)
+[INFO ] 2020-05-15 16:11:24.819 [SpringContextShutdownHook] c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+[INFO ] 2020-05-15 16:11:24.825 [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-15 16:12:27.567 [main] c.j.s.ScrolltofillmaterialApplicationTests - Starting ScrolltofillmaterialApplicationTests on DESKTOP-8MIN001 with PID 10596 (started by FirstJava in D:\Users\idea\scrolltofillmaterial)
+[INFO ] 2020-05-15 16:12:27.573 [main] c.j.s.ScrolltofillmaterialApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-15 16:12:34.122 [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-15 16:12:39.750 [main] c.j.s.ScrolltofillmaterialApplicationTests - Started ScrolltofillmaterialApplicationTests in 14.296 seconds (JVM running for 17.674)
+[INFO ] 2020-05-15 16:12:40.939 [SpringContextShutdownHook] c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+[INFO ] 2020-05-15 16:12:40.944 [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

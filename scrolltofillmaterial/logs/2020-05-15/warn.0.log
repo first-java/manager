@@ -1,0 +1,2 @@
+[WARN ] 2020-05-15 16:11:22.918 [main] c.a.d.pool.DruidAbstractDataSource - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[WARN ] 2020-05-15 16:12:36.892 [main] c.a.d.pool.DruidAbstractDataSource - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.

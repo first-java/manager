@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jnbdt.scrolltofillmaterial.dao.ScrollToFillMaterialDao">
+    <select id="selectBinUnitId" resultType="Map">
+       select * from sys_psl.v_jnbdt_scrollToFillMaterial where  product like '%'||#{binUnitId} ||'%'
+    </select>
+    <select id="selectBarcode" resultType="Map">
+       select * from sys_psl.v_jnbdt_Scroll_Material where  tape_id=#{barcode}
+    </select>
+    <insert id="saveBarcodeFedBatch" parameterType="java.util.List"
+            useGeneratedKeys="false">
+        insert into sys_psl.jnbdt_BarcodeFedBatch
+        (binunitid,materialname,lothead,qty,BARCODE,workId,createtime)
+        <foreach collection="list" item="item" index="index"
+                 separator="union all">
+            (SELECT #{item.binUnitId,jdbcType=VARCHAR},
+            #{item.materialName,jdbcType=VARCHAR},
+            #{item.lotHead,jdbcType=VARCHAR},
+            #{item.qty,jdbcType=VARCHAR},
+            #{item.barcode,jdbcType=VARCHAR},
+            #{item.workId,jdbcType=VARCHAR},
+            sysdate FROM DUAL)
+        </foreach>
+    </insert>
+    <update id="updateProductQty">
+         update jnbdt.fx_goods_shelf set shijiqty=shijiqty-#{qty} where product=#{binUnitId}
+      </update>
+    <update id="updateBarcodeQty">
+       update JNBDT.WEAVINGSHELFT set particlenumber=particlenumber-#{qty} where product=#{binUnitId}
+      </update>
+</mapper>
